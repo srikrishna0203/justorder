@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Veg-Items</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0%;
+        }
+        .con{
+            padding-top: 15px;
+            padding-left: 20px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            gap: 30px;
+            background-color: rgb(50, 49, 49);
+        }
+        img{
+            width: 300px;
+            height: 250px;
+            border-radius: 100px;
+            box-shadow: 0px 0px 10px grey;
+        }
+        nav{
+            width: 100%;
+            height: 100px;
+            background-color: aqua;
+            position: fixed;
+        }
+        h2,h3{
+            color: white;
+            width:200px ;
+            padding-left: 50px;
+            
+        }
+        .c1{
+            width: 350px;
+            height: 350px;
+        }
+        .con .c1:hover{
+            align-items: center;
+            width: 350px;
+            background-color: rgb(105, 102, 102);
+            border-radius: 30px;  
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="con">
+        <div class="c1" onclick="item1()">
+            <img src="https://i.pinimg.com/originals/4a/db/be/4adbbe51973495ac77991f55e83367e9.jpg" id="i1">
+            <h2 id="n1">Idli-vada </h2>
+            <div class="c1star" style="padding-left: 50px;">
+                <i class="fa-solid fa-star" style="color: #fafafa;"></i>
+                <i class="fa-solid fa-star" style="color: #fafafa;"></i>
+                <i class="fa-solid fa-star" style="color: #fafafa;"></i>
+                <i class="fa-solid fa-star" style="color: #fafafa;"></i>
+                <i class="fa-solid fa-star-half" style="color: #ffffff;"></i>
+            </div>
+            <h3 id="r1">₹40</h3>
+        </div>
+        <div class="c1" onclick="item2()">
+            <img src="https://pipingpotcurry.com/wp-content/uploads/2020/11/Dosa-recipe-plain-sada-dosa-Piping-Pot-Curry.jpg" id="i2">
+            <h2 id="n2">Masala-Dosa</h2>
+            <div class="c1star" style="padding-left: 50px;">
+                <i class="fa-solid fa-star" style="color: #fafafa;"></i>
+                <i class="fa-solid fa-star" style="color: #fafafa;"></i>
+                <i class="fa-solid fa-star" style="color: #fafafa;"></i>
+                <i class="fa-solid fa-star-half" style="color: #ffffff;"></i>
+            </div>
+            <h3 id="r2">₹45</h3>
+        </div>
+        <div class="c1" onclick="item3()">
+            <img src="https://www.shutterstock.com/shutterstock/photos/1797842821/display_1500/stock-photo-cheese-butter-plain-dosa-famous-south-indian-breakfast-crepes-with-cheese-potato-filling-selective-1797842821.jpg" id="i3">
+            <h2 id="n3">Butter-Dosa</h2>
+            <div class="c1star" style="padding-left: 50px;">
+                <i class="fa-solid fa-star" style="color: #fafafa;"></i>
+                <i class="fa-solid fa-star" style="color: #fafafa;"></i>
+                <i class="fa-solid fa-star-half" style="color: #ffffff;"></i>
+            </div>
+            <h3 id="r3">₹80</h3>
+        </div>
+        <div class="c1" onclick="item4()">
+            <img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2020/12/poori-puri-recipe-500x500.jpg" id="i4">
+            <h2 id="n4">Poori</h2>
+            <div class="c1star" style="padding-left: 50px;">
+                <i class="fa-solid fa-star" style="color: #fafafa;"></i>
+                <i class="fa-solid fa-star" style="color: #fafafa;"></i>
+                <i class="fa-solid fa-star-half" style="color: #ffffff;"></i>
+            </div>
+            <h3 id="r4">₹45</h3>
+        </div>
+        <div class="c1" onclick="item5()">
+            <img src="https://www.vegrecipesofindia.com/wp-content/uploads/2021/06/idli-recipe-1.jpg" id="i5">
+            <h2 id="n5">Sambar-idli</h2>
+            <div class="c1star" style="padding-left: 50px;">
+                <i class="fa-solid fa-star" style="color: #fafafa;"></i>
+                <i class="fa-solid fa-star" style="color: #fafafa;"></i>
+                <i class="fa-solid fa-star" style="color: #fafafa;"></i>
+                <i class="fa-solid fa-star" style="color: #fafafa;"></i>
+                <i class="fa-solid fa-star-half" style="color: #ffffff;"></i>
+            </div>
+            <h3 id="r5">₹45</h3>
+        </div>
+
+        <div class="c1" onclick="item6()">
+            <img src="https://www.mothersrecipe.com/wp-content/uploads/2019/10/Indian_Aloo_Batata_Poha_with_Pomegranates_Recipe_Archanas_Kitchen-1.jpg" id="i6">
+            <h2 id="n6">pulihora</h2>
+            <div class="c1star" style="padding-left: 50px;">
+                <i class="fa-solid fa-star" style="color: #fafafa;"></i>
+                <i class="fa-solid fa-star" style="color: #fafafa;"></i>
+                <i class="fa-solid fa-star" style="color: #fafafa;"></i>
+                <i class="fa-solid fa-star" style="color: #fafafa;"></i>
+                <i class="fa-solid fa-star-half" style="color: #ffffff;"></i>
+            </div>
+            <h3 id="r6">₹60</h3>
+        </div>
+        <div class="c1" onclick="item7()">
+            <img src="https://media.istockphoto.com/id/516105760/photo/methi-paratha.jpg?s=612x612&w=0&k=20&c=Jm-xSkbJ2w_D8wDQZf6Dsrr9T5aPldoBnW-PiSEriAQ=" id="i7">
+            <h2 id="n7">Chapathi</h2>
+            <div class="c1star" style="padding-left: 50px;">
+                <i class="fa-solid fa-star" style="color: #fafafa;"></i>
+                <i class="fa-solid fa-star" style="color: #fafafa;"></i>
+                <i class="fa-solid fa-star" style="color: #fafafa;"></i>
+                <i class="fa-solid fa-star" style="color: #fafafa;"></i>
+                <i class="fa-solid fa-star-half" style="color: #ffffff;"></i>
+            </div>
+            <h3 id="r7">₹50</h3>
+        </div>
+        <div class="c1" onclick="item8()">
+            <img src="https://b.zmtcdn.com/data/pictures/0/18708760/789aa91dfecd36d4d92b5f3daa28ab0e_featured_v2.jpg" id="i8">
+            <h2 id="n8">Idli</h2>
+            <div class="c1star" style="padding-left: 50px;">
+                <i class="fa-solid fa-star" style="color: #fafafa;"></i>
+                <i class="fa-solid fa-star" style="color: #fafafa;"></i>
+                <i class="fa-solid fa-star" style="color: #fafafa;"></i>
+                <i class="fa-solid fa-star-half" style="color: #ffffff;"></i>
+            </div>
+            <h3 id="r8">₹40</h3>
+        </div>
+        <div class="c1" onclick="item9()">
+            <img src="https://i0.wp.com/kalimirchbysmita.com/wp-content/uploads/2018/07/Medu-Vada-Insta-01.jpg" id="i9">
+            <h2 id="n9">vada</h2>
+            <div class="c1star" style="padding-left: 50px;">
+                <i class="fa-solid fa-star" style="color: #fafafa;"></i>
+                <i class="fa-solid fa-star" style="color: #fafafa;"></i>
+                <i class="fa-solid fa-star" style="color: #fafafa;"></i>
+                <i class="fa-solid fa-star" style="color: #fafafa;"></i>
+                <i class="fa-solid fa-star-half" style="color: #ffffff;"></i>
+            </div>
+            <h3 id="r9">₹40</h3>
+        </div>
+    </div>
+    <script>
+        function item1()
+        {
+            let a=document.getElementById('i1')
+            var imageSrc = a.src;
+            localStorage.setItem('image',imageSrc)
+            let n=document.getElementById('n1').innerHTML
+            let r=document.getElementById('r1').innerHTML
+            localStorage.setItem('name',n)
+            localStorage.setItem('rate',r)
+            window.location="./p3.html"
+        }
+        function item2()
+        {
+            let a=document.getElementById('i2')
+            var imageSrc = a.src;
+            localStorage.setItem('image',imageSrc)
+            let n=document.getElementById('n2').innerHTML
+            let r=document.getElementById('r2').innerHTML
+            localStorage.setItem('name',n)
+            localStorage.setItem('rate',r)
+            window.location="./p3.html"
+        }
+        function item3()
+        {
+            let a=document.getElementById('i3')
+            var imageSrc = a.src;
+            localStorage.setItem('image',imageSrc)
+            let n=document.getElementById('n3').innerHTML
+            let r=document.getElementById('r3').innerHTML
+            localStorage.setItem('name',n)
+            localStorage.setItem('rate',r)
+            window.location="./p3.html"
+        }
+        function item4()
+        {
+            let a=document.getElementById('i4')
+            var imageSrc = a.src;
+            localStorage.setItem('image',imageSrc)
+            let n=document.getElementById('n4').innerHTML
+            let r=document.getElementById('r4').innerHTML
+            localStorage.setItem('name',n)
+            localStorage.setItem('rate',r)
+            window.location="./p3.html"
+        }
+        function item5()
+        {
+            let a=document.getElementById('i5')
+            var imageSrc = a.src;
+            localStorage.setItem('image',imageSrc)
+            let n=document.getElementById('n5').innerHTML
+            let r=document.getElementById('r5').innerHTML
+            localStorage.setItem('name',n)
+            localStorage.setItem('rate',r)
+            window.location="./p3.html"
+        }
+        function item6()
+        {
+            let a=document.getElementById('i6')
+            var imageSrc = a.src;
+            localStorage.setItem('image',imageSrc)
+            let n=document.getElementById('n6').innerHTML
+            let r=document.getElementById('r6').innerHTML
+            localStorage.setItem('name',n)
+            localStorage.setItem('rate',r)
+            window.location="./p3.html"
+        }
+        function item7()
+        {
+            let a=document.getElementById('i7')
+            var imageSrc = a.src;
+            localStorage.setItem('image',imageSrc)
+            let n=document.getElementById('n7').innerHTML
+            let r=document.getElementById('r7').innerHTML
+            localStorage.setItem('name',n)
+            localStorage.setItem('rate',r)
+            window.location="./p3.html"
+        }
+        function item8()
+        {
+            let a=document.getElementById('i8')
+            var imageSrc = a.src;
+            localStorage.setItem('image',imageSrc)
+            let n=document.getElementById('n8').innerHTML
+            let r=document.getElementById('r8').innerHTML
+            localStorage.setItem('name',n)
+            localStorage.setItem('rate',r)
+            window.location="./p3.html"
+        }
+        function item9()
+        {
+            let a=document.getElementById('i9')
+            var imageSrc = a.src;
+            localStorage.setItem('image',imageSrc)
+            let n=document.getElementById('n9').innerHTML
+            let r=document.getElementById('r9').innerHTML
+            localStorage.setItem('name',n)
+            localStorage.setItem('rate',r)
+            window.location="./p3.html"
+        }
+    </script>
+</body>
+</html>

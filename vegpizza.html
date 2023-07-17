@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            outline: 0%;
+        }
+        img{
+            width: 300px;
+            height: 250px;
+            border-radius: 100px;
+            box-shadow: 0px 0px 10px grey;
+        }
+        .con{
+            width: 100%;
+            height: 100vh;
+            background-color: rgb(45, 44, 44);
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 30px;
+            align-items:center;
+            text-align: center;
+        }
+        h2,h3{
+            color: rgb(243, 241, 241);
+        }
+        .con .c1:hover{
+            align-items: center;
+            background-color: rgba(207, 207, 207, 0.532);
+            border-radius: 30px;  
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="con">
+        <div class="c1" onclick="item1()">
+            <img src="https://assets.bonappetit.com/photos/627ac1da37243f2984b7959b/1:1/w_2560%2Cc_limit/0510-barbecue-mushroom-pizza-lede.jpg" id="i1">
+            <h2 id="n1">Mush-room pizza </h2>
+            <div class="c1star">
+                <i class="fa-solid fa-star" style="color: #fafafa;"></i>
+                <i class="fa-solid fa-star" style="color: #fafafa;"></i>
+                <i class="fa-solid fa-star" style="color: #fafafa;"></i>
+                <i class="fa-solid fa-star" style="color: #fafafa;"></i>
+                <i class="fa-solid fa-star-half" style="color:#ffffff;"></i>
+            </div>
+            <h3 id="r1">₹240</h3>
+        </div>
+        <div class="c1" onclick="item2()">
+            <img src="https://food.fnr.sndimg.com/content/dam/images/food/fullset/2018/4/2/2/LS-Library_Grilled-Tomato-Basil-Pizza_s4x3.jpg.rend.hgtvcom.616.462.suffix/1522720858964.jpeg" id="i2">
+            <h2 id="n2">Paneer pizza </h2>
+            <div class="c1star">
+                <i class="fa-solid fa-star" style="color: #fafafa;"></i>
+                <i class="fa-solid fa-star" style="color: #fafafa;"></i>
+                <i class="fa-solid fa-star" style="color: #fafafa;"></i>
+                <i class="fa-solid fa-star" style="color: #fafafa;"></i>
+                <i class="fa-solid fa-star-half" style="color:#ffffff;"></i>
+            </div>
+            <h3 id="r2">₹260</h3>
+        </div>
+        <div class="c1" onclick="item3()">
+            <img src="https://www.awesomecuisine.com/wp-content/uploads/2014/01/capsicum-pizza.jpg" id="i3">
+            <h2 id="n3">Capsicum pizza </h2>
+            <div class="c1star">
+                <i class="fa-solid fa-star" style="color: #fafafa;"></i>
+                <i class="fa-solid fa-star" style="color: #fafafa;"></i>
+                <i class="fa-solid fa-star" style="color: #fafafa;"></i>
+                <i class="fa-solid fa-star" style="color: #fafafa;"></i>
+                <i class="fa-solid fa-star-half" style="color:#ffffff;"></i>
+            </div>
+            <h3 id="r3">₹240</h3>
+        </div>
+        <div class="c1" onclick="item4()">
+            <img src="https://parcelkaro.in/wp-content/uploads/2023/02/Cheese-Onion-pizza.jpg" id="i4">
+            <h2 id="n4">Onion-Pizza </h2>
+            <div class="c1star">
+                <i class="fa-solid fa-star" style="color: #fafafa;"></i>
+                <i class="fa-solid fa-star" style="color: #fafafa;"></i>
+                <i class="fa-solid fa-star" style="color: #fafafa;"></i>
+                <i class="fa-solid fa-star" style="color: #fafafa;"></i>
+                <i class="fa-solid fa-star-half" style="color:#ffffff;"></i>
+            </div>
+            <h3 id="r4">₹220</h3>
+        </div>
+        <div class="c1" onclick="item5()">
+            <img src="https://www.awesomecuisine.com/wp-content/uploads/2014/01/capsicum-pizza.jpg" id="i5">
+            <h2 id="n5">Tamato pizza </h2>
+            <div class="c1star">
+                <i class="fa-solid fa-star" style="color: #fafafa;"></i>
+                <i class="fa-solid fa-star" style="color: #fafafa;"></i>
+                <i class="fa-solid fa-star" style="color: #fafafa;"></i>
+                <i class="fa-solid fa-star" style="color: #fafafa;"></i>
+                <i class="fa-solid fa-star-half" style="color:#ffffff;"></i>
+            </div>
+            <h3 id="r5">₹240</h3>
+        </div>
+        <div class="c1" onclick="item6()">
+            <img src="https://media-cdn.tripadvisor.com/media/photo-s/1b/46/01/b2/saigon-heat-italian-pepperoni.jpg" id="i6"> 
+            <h2 id="n6">Red-chilli pizza </h2>
+            <div class="c1star">
+                <i class="fa-solid fa-star" style="color: #fafafa;"></i>
+                <i class="fa-solid fa-star" style="color: #fafafa;"></i>
+                <i class="fa-solid fa-star" style="color: #fafafa;"></i>
+                <i class="fa-solid fa-star" style="color: #fafafa;"></i>
+                <i class="fa-solid fa-star-half" style="color:#ffffff;"></i>
+            </div>
+            <h3 id="r6">₹240</h3>
+        </div>
+    </div>
+    <script>
+        function item1()
+        {
+            let a=document.getElementById('i1')
+            var imageSrc = a.src;
+            localStorage.setItem('image',imageSrc)
+            let n=document.getElementById('n1').innerHTML
+            let r=document.getElementById('r1').innerHTML
+            localStorage.setItem('name',n)
+            localStorage.setItem('rate',r)
+            window.location="./p3.html"
+        }
+        function item2()
+        {
+            let a=document.getElementById('i2')
+            var imageSrc = a.src;
+            localStorage.setItem('image',imageSrc)
+            let n=document.getElementById('n2').innerHTML
+            let r=document.getElementById('r2').innerHTML
+            localStorage.setItem('name',n)
+            localStorage.setItem('rate',r)
+            window.location="./p3.html"
+        }
+        function item3()
+        {
+            let a=document.getElementById('i3')
+            var imageSrc = a.src;
+            localStorage.setItem('image',imageSrc)
+            let n=document.getElementById('n3').innerHTML
+            let r=document.getElementById('r3').innerHTML
+            localStorage.setItem('name',n)
+            localStorage.setItem('rate',r)
+            window.location="./p3.html"
+        }
+        function item4()
+        {
+            let a=document.getElementById('i4')
+            var imageSrc = a.src;
+            localStorage.setItem('image',imageSrc)
+            let n=document.getElementById('n4').innerHTML
+            let r=document.getElementById('r4').innerHTML
+            localStorage.setItem('name',n)
+            localStorage.setItem('rate',r)
+            window.location="./p3.html"
+        }
+        function item5()
+        {
+            let a=document.getElementById('i5')
+            var imageSrc = a.src;
+            localStorage.setItem('image',imageSrc)
+            let n=document.getElementById('n5').innerHTML
+            let r=document.getElementById('r5').innerHTML
+            localStorage.setItem('name',n)
+            localStorage.setItem('rate',r)
+            window.location="./p3.html"
+        }
+        function item6()
+        {
+            let a=document.getElementById('i6')
+            var imageSrc = a.src;
+            localStorage.setItem('image',imageSrc)
+            let n=document.getElementById('n6').innerHTML
+            let r=document.getElementById('r6').innerHTML
+            localStorage.setItem('name',n)
+            localStorage.setItem('rate',r)
+            window.location="./p3.html"
+        }
+    </script>
+</body>
+</html>
